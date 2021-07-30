@@ -1,0 +1,26 @@
+/* Ubuntu */
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+
+/* Roboto */
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto/Roboto-Regular.ttf');
+}
+
+
+/* Tajawal */
+@font-face {
+    font-family: Tajawal;
+    src: url('../fonts/Tajawal/Tajawal-Regular.ttf');
+}
+
+
+/* Cairo */
+@font-face {
+    font-family: Cairo;
+    src: url('../fonts/Cairo/Cairo-Regular.ttf');
+}

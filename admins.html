@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminGLT | Posts</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <!-- Colors -->
+    <link rel="stylesheet" href="assets/css/bs-colors.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/gfonts.css">
+    <!-- Style en -->
+    <link rel="stylesheet" href="assets/css/style-en.css">
+
+</head>
+
+<body>
+
+    <div class="body-inner">
+
+        <!-- .navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="#">AdminGTL</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="posts.html"><i class="fas fa-pencil-alt"></i> Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html"><i class="fas fa-th-large"></i> Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tag.html"><i class="fas fa-tags"></i>
+                                Tags</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="admin.html"><i
+                                    class="fas fa-users"></i> Admins</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-globe"></i> العربية</a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+                                <span class="badge bg-light text-dark rounded-circle">3</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <table class="table table-borderless table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-ceter"><img src="https://via.placeholder.com/40" alt=""
+                                                    class="rounded-circle"></td>
+                                            <td><a href="#/">Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                                    <</a> </td> </tr> <tr>
+                                            <td class="text-ceter"><img src="https://via.placeholder.com/40" alt=""
+                                                    class="rounded-circle"></td>
+                                            <td><a href="#/">Lorem ipsum dolor sit amet consectetur, adipisicing elit
+                                                    <</a> </td> </tr> </tbody> </table> </div> </li> </ul> <form
+                                                        class="d-flex nav-search-form position-relative">
+                                                        <input class="form-control me-2" type="search"
+                                                            placeholder="Search" aria-label="Search">
+                                                        <button type="submit"><i class="fas fa-search"></i></button>
+                                                        </form>
+                            </div>
+                </div>
+        </nav>
+        <!-- /.navbar -->
+
+
+        <!-- .header -->
+        <div class="header py-4 text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h1>
+                            <i class="fas fa-cogs"></i>
+                            Dashboard
+                            <small class="text-capitalize fw-lighter fs-4 opacity-25">Manage blog posts</small>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.header -->
+
+
+        <!-- .breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <nav class="p-2 my-3 bg-light border" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Post List</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- /.breadcrumbs -->
+
+
+
+        <div class="content-layout">
+            <div class="container">
+                <div class="row">
+
+                    <!-- .sidebar -->
+                    <div class="col-md-3">
+                        <div class="sidebar">
+
+                            <!-- .sidebar-admin-area -->
+                            <div class="card mb-3 sidebar-admin-area">
+                                <div class="card-header">
+                                    Adminstrator
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="image"
+                                                width="60" class="mw-100 rounded-circle">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5>John Doe</h5>
+                                            <p>johndoe@mailbox.com</p>
+                                            [
+                                            <a href="profile.html" class="text-decoration-underline text-primary">Edit
+                                                Profile</a>
+                                            -
+                                            <a href="#?" class="text-decoration-underline text-primary"> Logout</a>
+                                            ]
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.sidebar-admin-area -->
+
+                            <!-- .sidebar-nav-men -->
+                            <div class="card mb-3 sidebar-nav-men">
+                                <div class="card-header">
+                                    Navigation
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a href="index.html" class="d-flex">
+                                            <i class="fas me-2 fa-home"></i> Home
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item active">
+                                        <a href="posts.html" class="d-flex">
+                                            <i class="fas me-2 fa-pencil-alt"></i> Posts
+                                            <span class="badge bg-secondary rounded-pill text-end ms-auto">1513</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="category.html" class="d-flex">
+                                            <i class="fas me-2 fa-th-list"></i> Categories
+                                            <span class="badge bg-secondary rounded-pill text-end ms-auto">45</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="tag.html" class="d-flex">
+                                            <i class="fas me-2 fa-tags"></i> Tags
+                                            <span class="badge bg-secondary rounded-pill text-end ms-auto">201</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="email.html" class="d-flex">
+                                            <i class="fas me-2 fa-envelope"></i> Email
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="reports.html" class="d-flex">
+                                            <i class="fas me-2 fa-file"></i> Reports
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="setting.html" class="d-flex">
+                                            <i class="fas me-2 fa-cog"></i> Settings
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.sidebar-nav-men -->
+
+                            <!-- .preview-website -->
+                            <div class="visit-web text-center">
+                                <a href="#?" class="btn bg-gray text-white px-5">
+                                    <i class="fas fa-globe-africa"></i> Visit Web
+                                </a>
+                            </div>
+                            <!-- /.preview-website -->
+
+                        </div>
+                    </div>
+                    <!-- /.sidebar -->
+
+
+                    <!-- .main-content -->
+                    <div class="col-md-9">
+                        <div class="main-content">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Super Admin
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="image py-3">
+                                                <img src="https://picsum.photos/120" alt="image avatar"
+                                                    class="rounded-circle">
+                                            </div>
+                                            <h4 class="card-title">Peter Parker</h4>
+                                            <p class="card-text mb-3">peterparker@example.io</p>
+                                            <span class="text-teal"><i class="fas fa-check-circle"></i> online</span>
+                                            </br>
+                                        </div>
+                                        <div class="card-footer text-center">
+                                            <a href="profile.html" class="btn btn-sm btn-success">
+                                                <i class="fas fa-eye"></i> Show
+                                            </a>
+                                            <a href="#?" class="btn btn-sm btn-primary">
+                                                <i class="fas fa-paper-plane"></i> Message
+                                            </a>
+                                            <a href="#?" class="btn btn-sm btn-danger">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Post Typography
+                                        </div>
+                                        <div class="card-body text-center">
+                                            <div class="image py-3">
+                                                <img src="https://picsum.photos/120" alt="image avatar"
+                                                    class="rounded-circle">
+                                            </div>
+                                            <h4 class="card-title">Harmony Reigns</h4>
+                                            <p class="card-text mb-3">harmony@regins.me</p>
+                                            <span class="text-secondary"><i class="fas fa-check-circle"></i>
+                                                offline</span>
+                                            </br>
+                                        </div>
+                                        <div class="card-footer text-center">
+                                            <a href="profile.html" class="btn btn-sm btn-success">
+                                                <i class="fas fa-eye"></i> Show
+                                            </a>
+                                            <a href="#?" class="btn btn-sm btn-primary">
+                                                <i class="fas fa-paper-plane"></i> Message
+                                            </a>
+                                            <a href="#?" class="btn btn-sm btn-danger">
+                                                <i class="fas fa-trash"></i> Delete
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /.main-content -->
+            </div>
+        </div>
+    </div>
+    <!-- /.content-layout -->
+
+
+    </div>
+    <!-- /.body-inner -->
+
+
+
+    <!-- jQuery -->
+    <script src="assets/plugins/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap, Popper -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="assets/plugins/fontawesome/js/all.min.js"></script>
+</body>
+
+</html>

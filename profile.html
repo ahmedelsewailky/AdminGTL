@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminGLT</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css">
+    <!-- Fancy Image Uploader -->
+    <link rel="stylesheet" href="assets/plugins/fancy-file-uploader/fancy_fileupload.css">
+    <!-- Colors -->
+    <link rel="stylesheet" href="assets/css/bs-colors.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="assets/css/gfonts.css">
+    <!-- Style en -->
+    <link rel="stylesheet" href="assets/css/style-en.css">
+
+</head>
+
+<body>
+
+    <div class="body-inner">
+
+        <!-- .navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+            <div class="container">
+                <a class="navbar-brand" href="#">AdminGTL</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="posts.html"><i class="fas fa-pencil-alt"></i> Posts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html"><i class="fas fa-th-large"></i> Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tag.html"><i class="fas fa-tags"></i>
+                                Tags</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="admins.html"><i class="fas fa-users"></i> Admins</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="fas fa-globe"></i> العربية</a>
+                            
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+                                <span class="badge bg-light text-dark rounded-circle">3</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <table class="table table-borderless table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-ceter"><img src="https://via.placeholder.com/40" alt="" class="rounded-circle"></td>
+                                            <td><a href="#/">Lorem ipsum dolor sit amet consectetur, adipisicing elit<</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-ceter"><img src="https://via.placeholder.com/40" alt="" class="rounded-circle"></td>
+                                            <td><a href="#/">Lorem ipsum dolor sit amet consectetur, adipisicing elit<</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </li>
+                    </ul>
+                    <form class="d-flex nav-search-form position-relative">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- /.navbar -->
+
+
+        <!-- .header -->
+        <div class="header py-4 text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10">
+                        <h1>
+                            <i class="fas fa-cogs"></i>
+                            Dashboard
+                            <small class="text-capitalize fw-lighter fs-4 opacity-25">Manage your profile</small>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.header -->
+
+
+        <!-- .breadcrumbs -->
+        <div class="breadcrumbs">
+            <div class="container">
+                <nav class="p-2 my-3 bg-light border" aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"> Admin Profile</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- /.breadcrumbs -->
+
+
+
+        <div class="content-layout">
+            <div class="container">
+                <div class="row">
+
+                    <!-- .sidebar -->
+                    <div class="col-md-3">
+                        <div class="sidebar">
+
+                            <!-- .sidebar-admin-area -->
+                            <div class="card mb-3 sidebar-admin-area">
+                                <div class="card-header">
+                                    Adminstrator
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex">
+                                        <div class="flex-shrink-0">
+                                            <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="image"
+                                                width="60" class="mw-100 rounded-circle">
+                                        </div>
+                                        <div class="flex-grow-1 ms-3">
+                                            <h5>John Doe</h5>
+                                            <p>johndoe@mailbox.com</p>
+                                            [ Edit Profile
+                                            -
+                                            <a href="#?" class="text-decoration-underline text-primary"> Logout</a>
+                                            ]
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /.sidebar-admin-area -->
+
+                            <!-- .sidebar-nav-men -->
+                            <div class="card mb-3 sidebar-nav-men">
+                                <div class="card-header">
+                                    Navigation
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <a href="index.html" class="d-flex">
+                                            <i class="fas me-2 fa-home"></i> Home
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="posts.html" class="d-flex">
+                                            <i class="fas me-2 fa-pencil-alt"></i> Posts
+                                            <span class="badge bg-secondary rounded-pill text-end ms-auto">1513</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="category.html" class="d-flex">
+                                            <i class="fas me-2 fa-th-list"></i> Categories
+                                            <span class="badge bg-secondary rounded-pill text-end ms-auto">45</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item active">
+                                        <a href="tag.html" class="d-flex">
+                                            <i class="fas me-2 fa-tags"></i> Tags
+                                            <span class="badge bg-secondary rounded-pill text-end ms-auto">201</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="email.html" class="d-flex">
+                                            <i class="fas me-2 fa-envelope"></i> Email
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="reports.html" class="d-flex">
+                                            <i class="fas me-2 fa-file"></i> Reports
+                                        </a>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <a href="setting.html" class="d-flex">
+                                            <i class="fas me-2 fa-cog"></i> Settings
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- /.sidebar-nav-men -->
+
+                            <!-- .preview-website -->
+                            <div class="visit-web text-center">
+                                <a href="#?" class="btn bg-gray text-white px-5">
+                                    <i class="fas fa-globe-africa"></i> Visit Web
+                                </a>
+                            </div>
+                            <!-- /.preview-website -->
+
+                        </div>
+                    </div>
+                    <!-- /.sidebar -->
+
+
+                    <!-- .main-content -->
+                    <div class="col-md-9">
+                        <div class="main-content row">
+                            <div class="col-md-3">
+                                <div class="profile-dash-avatar border p-2">
+                                    <h4>John Doe</h4>
+                                    <span class="text-teal"><i class="fas fa-check-circle"></i> online</span>
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="profile image" class="mw-100 border p-2 my-2">
+                                    <div class="d-block text-center mt-2 mb-2">
+                                        <span class="py-2 px-3 bg-danger text-white rounded">Admin</span>
+                                    </div>
+                                    <div class="ratings text-center">
+                                        <span class="text-orange"><i class="fas fa-star"></i></span>
+                                        <span class="text-orange"><i class="fas fa-star"></i></span>
+                                        <span class="text-orange"><i class="fas fa-star"></i></span>
+                                        <span class="text-orange"><i class="fas fa-star"></i></span>
+                                        <span class="text-orange"><i class="far fa-star"></i></span>
+                                        <span class="text-orange">Super User</span>
+                                    </div>
+                                    <p class="text-center">Member since: Jan 2021</p>
+                                    <div class="details ms-4 py-3 mt-2 border-top border-bottom">
+                                        <ul class="nav flex-column">
+                                            <li class="nav-item">
+                                                <i class="fas fa-pencil-alt me-2"></i> 
+                                                Posts: <span class="text-danger fw-bold">456</span>
+                                            </li>
+                                            <li class="nav-item">
+                                                <i class="fas fa-comment me-2"></i>
+                                                Comments: <span class="text-danger fw-bold">25</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="d-block text-center mt-2">
+                                        <a href="#?" class="btn btn-sm bg-teal text-white" style="border-bottom: 4px solid #1db588;">
+                                            <i class="fas fa-envelope"></i> Send message
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-9">
+                                <div class="profile-dash border p-2">
+
+                                    <div class="head d-flex justify-content-between align-items-center">
+                                        <h4 class="border-bottom">Admin Info</h4>
+                                        <button type="button" class="btn btn-sm bg-gray text-white" data-bs-target="#editProfile" data-bs-toggle="modal">
+                                            <i class="fas fa-edit"></i>
+                                            Edit Profile
+                                        </button>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-8">
+                                            <table class="table table-borderless">
+                                                <tbody>
+                                                    <tr>
+                                                        <th class="text-end w-25">First Name:</th>
+                                                        <td>John</td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <th class="text-end">Last Name:</th>
+                                                        <td>Doe</td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <th class="text-end">Address:</th>
+                                                        <td>10880 Malibu Point, <br>Malibu, Calif., 90265</td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <th class="text-end">E-Mail:</th>
+                                                        <td>johndoe@mailbox.com</td>
+                                                    </tr>
+                                                    
+                                                    <tr>
+                                                        <th class="text-end">Phone Number:</th>
+                                                        <td>012-34 56 78 90</td>
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="social">
+                                                <ul class="nav flex-column">
+                                                    <li class="nav-item">
+                                                        <a href="#?" class="nav-link text-teal">
+                                                            <i class="fab fa-twitter-square me-2 text-dark"></i> @johndoe
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    <li class="nav-item">
+                                                        <a href="#?" class="nav-link text-teal">
+                                                            <i class="fab fa-linkedin me-2 text-dark"></i> John Doe
+                                                        </a>
+                                                    </li>
+
+                                                    
+                                                    <li class="nav-item">
+                                                        <a href="#?" class="nav-link text-teal">
+                                                            <i class="fab fa-facebook-square me-2 text-dark"></i> John Doe
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            [
+                                            <a href="#?" class="text-decoration-underline text-primary" data-bs-toggle="modal" data-bs-target="#changePassword">
+                                                 Change Password
+                                            </a>
+                                            - 
+                                            <a href="#?" class="text-decoration-underline text-primary" data-bs-toggle="modal" data-bs-target="#changeAvatar">
+                                                 Change Image Avatar
+                                            </a>
+                                            ]
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="activity border p-2 mt-3">
+                                    <h4 class="border-bottom float-start mb-3">Activity</h4>
+                                    <table class="table table-borderless table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center"><i class="fas fa-comment-alt"></i></td>
+                                                <td> John Doe posted a comment in <span class="text-danger">Avengers Initiative</span> project.</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"><i class="fas fa-underline"></i></td>
+                                                <td> John Doe published post <span class="text-danger"><a href="#?" class="text-decoration-underline">30 best vscode extension for php</a></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"><i class="fas fa-edit"></i></td>
+                                                <td>John Doe change his post <span class="text-danger"><a href="#?" class="text-decoration-underline">How to create laravel blogger with vue</a></span> category to <span class="badge bg-orange rounded">Web Development</span></td> 
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.main-content -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.content-layout -->
+
+
+    </div>
+    <!-- /.body-inner -->
+    
+    <!-- Modal Personal Information-->
+    <div class="modal fade" id="editProfile">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form action="" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Edit Your Profile Personal Information</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group mb-3">
+                            <lable for="" class="form-label">First Name</lable>
+                            <input type="text" class="form-control" name="name" value="John">
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <lable for="" class="form-label">Last Name</lable>
+                            <input type="text" class="form-control" name="name" value="Doe">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <lable for="" class="form-label">E-Mail Address</lable>
+                            <input type="email" class="form-control" name="name" value="johndoe@mailbox.com">
+                        </div>
+                        
+                        <div class="form-group mb-3">
+                            <lable for="" class="form-label">Address</lable>
+                            <input type="text" class="form-control" name="name" value="10880 Malibu Point, Malibu, Calif., 90265">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <lable for="" class="form-label">Phone Number</lable>
+                            <input type="text" class="form-control" name="name" value="012-34 56 78 90">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+                        <button type="submit" class="btn btn-sm btn-primary"><i class="fas fa-save"></i> Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Modal Change Password -->
+    <div class="modal fade" id="changePassword">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form action="" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Change Your Password</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group mb-3">
+                            <lable for="" class="form-label">Old Password</lable>
+                            <input type="password" class="form-control" name="name" placeholder="Old password here">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <lable for="" class="form-label">New Password</lable>
+                            <input type="password" class="form-control" name="name" placeholder="New password">
+                        </div>
+
+                        <div class="form-group mb-3">
+                            <lable for="" class="form-label">Confirm Password</lable>
+                            <input type="password" class="form-control" name="name" placeholder="Re-Write password again">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+                        <button type="submit" class="btn btn-sm btn-primary"><i class="fas fa-save"></i> Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- Modal Change Image -->
+    <div class="modal fade" id="changeAvatar">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form action="" method="POST">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Change Your Image Avatar</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input id="admin_profile_avatar" type="file" name="files" accept=".jpg, .png, image/jpeg, image/png" multiple>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+                        <button type="submit" class="btn btn-sm btn-primary"><i class="fas fa-save"></i> Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <!-- jQuery -->
+    <script src="assets/plugins/jquery/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap, Popper -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- FontAwesome -->
+    <script src="assets/plugins/fontawesome/js/all.min.js"></script>
+    <!-- Fancy  File Uploader -->>
+    <script src="assets/plugins/fancy-file-uploader/jquery.ui.widget.js"></script>
+    <script src="assets/plugins/fancy-file-uploader/jquery.fileupload.js"></script>
+    <script src="assets/plugins/fancy-file-uploader/jquery.iframe-transport.js"></script>
+    <script src="assets/plugins/fancy-file-uploader/jquery.fancy-fileupload.js"></script>
+    <!-- Jquery File --> 
+    <script>
+        // Trigger Fancy Image Uploader
+        $('#admin_profile_avatar').FancyFileUpload({
+        params: {
+            action: 'fileuploader'
+        },
+        maxfilesize: 1000000
+        });
+    </script>
+    <script>
+        
+    </script>
+</body>
+
+</html>         
